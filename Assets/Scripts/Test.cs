@@ -8,21 +8,7 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var os = SystemInfo.operatingSystemFamily;
-        switch (os)
-        {
-            case OperatingSystemFamily.Windows:
-                print("I'm on Windows");
-                break;
-            case OperatingSystemFamily.MacOSX:
-                print("I'm on Mac OS");
-                break;
-            default:
-                print("I'm on Linux");
-                break;
-        }
-
-        print(SystemInfo.operatingSystemFamily);
+        
     }
 
     // Update is called once per frame

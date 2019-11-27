@@ -8,10 +8,25 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     private static Control _control;
+
+    private OperatingSystemFamily _os;
     // Start is called before the first frame update
     void Start()
     {
         _control = Control.Keyboard;
+        _os = SystemInfo.operatingSystemFamily;
+        switch (_os)
+        {
+            case OperatingSystemFamily.Windows:
+                print("I'm on Windows");
+                break;
+            case OperatingSystemFamily.MacOSX:
+                print("I'm on Mac OS");
+                break;
+            default:
+                print("I'm on Linux");
+                break;
+        }
     }
 
     // Update is called once per frame
@@ -26,11 +41,33 @@ public class InputManager : MonoBehaviour
         }
         else if (names[0].Equals("Wireless Controller"))
         {
-            _control = Control.Ps4;
+            switch (_os)
+            {
+                case OperatingSystemFamily.Windows:
+                    _control = Control.Ps4;
+                    break;
+                case OperatingSystemFamily.MacOSX:
+                    _control = Control.MacOsPs4;
+                    break;
+                default:
+                    _control = Control.LinuxPs4;
+                    break;
+            }
         }
         else
         {
-            _control = Control.Xbox;
+            switch (_os)
+            {
+                case OperatingSystemFamily.Windows:
+                    _control = Control.Xbox;
+                    break;
+                case OperatingSystemFamily.MacOSX:
+                    _control = Control.MacOsXbox;
+                    break;
+                default:
+                    _control = Control.LinuxXbox;
+                    break;
+            }
         }
 
         if (_control != previous)
