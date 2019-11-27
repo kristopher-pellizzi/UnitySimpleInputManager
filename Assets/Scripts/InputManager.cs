@@ -17,6 +17,7 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Control previous = _control;
         String[] names = Input.GetJoystickNames().Where(joyName => !joyName.Equals("")).ToArray();
         
         if (names.Length == 0)
@@ -30,6 +31,11 @@ public class InputManager : MonoBehaviour
         else
         {
             _control = Control.Xbox;
+        }
+
+        if (_control != previous)
+        {
+            print(_control);
         }
     }
 
