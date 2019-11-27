@@ -947,14 +947,14 @@ InputManager:
     snap: 1
     invert: 1
     type: 2
-    axis: 2
+    axis: 1
     joyNum: 0
   - serializedVersion: 3
     m_Name: LinuxXbox0
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 1
+    positiveButton: joystick button 0
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -970,7 +970,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 2
+    positiveButton: joystick button 1
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1002,7 +1002,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 0
+    positiveButton: joystick button 2
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1018,7 +1018,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 9
+    positiveButton: joystick button 7
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1034,7 +1034,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 8
+    positiveButton: joystick button 6
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1050,7 +1050,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 13
+    positiveButton: joystick button 15
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1098,7 +1098,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 10
+    positiveButton: joystick button 9
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1114,7 +1114,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 11
+    positiveButton: joystick button 10
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1155,7 +1155,7 @@ InputManager:
     snap: 0
     invert: 1
     type: 2
-    axis: 6
+    axis: 4
     joyNum: 0
   - serializedVersion: 3
     m_Name: LinuxXboxDPadHorizontal
@@ -1171,7 +1171,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 7
+    axis: 6
     joyNum: 0
   - serializedVersion: 3
     m_Name: LinuxXboxDPadVertical
@@ -1187,7 +1187,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 8
+    axis: 7
     joyNum: 0
   - serializedVersion: 3
     m_Name: LinuxXboxLT
@@ -1203,7 +1203,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 4
+    axis: 2
     joyNum: 0
   - serializedVersion: 3
     m_Name: LinuxXboxRT
@@ -1555,14 +1555,14 @@ InputManager:
     snap: 1
     invert: 1
     type: 2
-    axis: 2
+    axis: 1
     joyNum: 0
   - serializedVersion: 3
     m_Name: MacOsXbox0
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 1
+    positiveButton: joystick button 16
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1578,7 +1578,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 2
+    positiveButton: joystick button 17
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1594,7 +1594,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 3
+    positiveButton: joystick button 19
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1610,7 +1610,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 0
+    positiveButton: joystick button 18
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1626,7 +1626,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 9
+    positiveButton: joystick button 7
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1642,7 +1642,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 8
+    positiveButton: joystick button 6
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1658,7 +1658,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 13
+    positiveButton: joystick button 15
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1674,7 +1674,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 4
+    positiveButton: joystick button 13
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1690,7 +1690,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 5
+    positiveButton: joystick button 14
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1706,7 +1706,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 10
+    positiveButton: joystick button 11
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1722,7 +1722,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 11
+    positiveButton: joystick button 12
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -1747,7 +1747,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 3
+    axis: 2
     joyNum: 0
   - serializedVersion: 3
     m_Name: MacOsXboxRVertical
@@ -1763,14 +1763,14 @@ InputManager:
     snap: 0
     invert: 1
     type: 2
-    axis: 6
+    axis: 3
     joyNum: 0
   - serializedVersion: 3
     m_Name: MacOsXboxDPadHorizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: joystick button 7
+    positiveButton: joystick button 8
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1778,15 +1778,15 @@ InputManager:
     sensitivity: 1
     snap: 0
     invert: 0
-    type: 2
+    type: 0
     axis: 7
     joyNum: 0
   - serializedVersion: 3
     m_Name: MacOsXboxDPadVertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: joystick button 6
+    positiveButton: joystick button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
