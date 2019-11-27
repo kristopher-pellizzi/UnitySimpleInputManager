@@ -11,7 +11,7 @@ public class InputManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _control = Control.Keyboard;
     }
 
     // Update is called once per frame
