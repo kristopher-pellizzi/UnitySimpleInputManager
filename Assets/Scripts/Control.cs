@@ -64,6 +64,16 @@ public static class ControlExtensions
       return _managers[GetManagerID(c)].GetAxisRaw(axis);
    }
 
+   public static bool GetButtonUp(this Control c, String name)
+   {
+      return _managers[GetManagerID(c)].GetButtonUp(name);
+   }
+
+   public static bool GetButton(this Control c, String name)
+   {
+      return _managers[GetManagerID(c)].GetButton(name);
+   }
+
    private class ControlManager
    {
       private Dictionary<String, String> _input;
@@ -138,6 +148,20 @@ public static class ControlExtensions
       {
          _input.TryGetValue(name, out var axis);
          return Input.GetAxisRaw(axis);
+      }
+
+      public bool GetButtonUp(String name)
+      {
+         _input.TryGetValue(name, out var button);
+         return Input.GetButtonUp(button);
+      }
+
+      public bool GetButton(String name)
+      {
+         _input.TryGetValue(name, out var button);
+         {
+            return Input.GetButton(button);
+         }
       }
    }
 }

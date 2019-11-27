@@ -90,4 +90,14 @@ public class InputManager : MonoBehaviour
     {
         return _control.GetAxisRaw(name);
     }
+
+    public static bool GetButtonUp(String name)
+    {
+        return _control.GetButtonUp(name);
+    }
+
+    public static bool GetButton(String name)
+    {
+        return _control.GetButton(name);
+    }
 }
