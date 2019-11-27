@@ -7,7 +7,22 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        var os = Environment.OSVersion.Platform;
+        switch (os)
+        {
+            case PlatformID.Win32S:
+            case PlatformID.Win32Windows:
+            case PlatformID.Win32NT:
+            case PlatformID.WinCE:
+                print("I'm using Windows");
+                break;
+            case PlatformID.MacOSX:
+                print("I'm using MacOS");
+                break;
+            default:
+                print("I'm using Linux");
+                break;
+        }
     }
 
     // Update is called once per frame
