@@ -8,12 +8,25 @@ public enum Control
 {
    Xbox,
    Ps4,
-   Keyboard
+   Keyboard,
+   LinuxXbox,
+   LinuxPs4,
+   MacOsXbox,
+   MacOsPs4
 }
 
 public static class ControlExtensions
 {
-   private static ControlManager[] _managers = {new ControlManager().Initialize(Control.Xbox), new ControlManager().Initialize(Control.Ps4), new ControlManager().Initialize(Control.Keyboard)};
+   private static ControlManager[] _managers =
+   {
+      new ControlManager().Initialize(Control.Xbox), 
+      new ControlManager().Initialize(Control.Ps4), 
+      new ControlManager().Initialize(Control.Keyboard),
+      new ControlManager().Initialize(Control.LinuxXbox),
+      new ControlManager().Initialize(Control.LinuxPs4),
+      new ControlManager().Initialize(Control.MacOsXbox),
+      new ControlManager().Initialize(Control.MacOsPs4)
+   };
 
    private static int GetManagerID(Control c)
    {
@@ -23,6 +36,14 @@ public static class ControlExtensions
             return 0;
          case Control.Ps4:
             return 1;
+         case Control.LinuxXbox:
+            return 3;
+         case Control.LinuxPs4:
+            return 4;
+         case Control.MacOsXbox:
+            return 5;
+         case Control.MacOsPs4:
+            return 6;
          default:
             return 2;
       }
@@ -57,6 +78,18 @@ public static class ControlExtensions
                break;
             case Control.Ps4:
                prefix = "Ps4";
+               break;
+            case Control.LinuxXbox:
+               prefix = "LinuxXbox";
+               break;
+            case Control.LinuxPs4:
+               prefix = "LinuxPs4";
+               break;
+            case Control.MacOsXbox:
+               prefix = "MacOsXbox";
+               break;
+            case Control.MacOsPs4:
+               prefix = "MacOsPs4";
                break;
             default:
                prefix = "KB";
