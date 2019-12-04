@@ -7,9 +7,27 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
+    private static InputManager _manager;
     private static Control _control;
 
     private OperatingSystemFamily _os;
+    
+    private void Awake()
+    {
+        if (!_manager)
+        {
+            _manager = this;
+            if (!_manager)
+            {
+                print("There must be an active InputManager");
+            }
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
