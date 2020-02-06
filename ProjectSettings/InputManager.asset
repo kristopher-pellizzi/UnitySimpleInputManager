@@ -1626,7 +1626,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 7
+    positiveButton: joystick button 9
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1642,7 +1642,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 6
+    positiveButton: joystick button 10
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -1859,7 +1859,7 @@ InputManager:
     snap: 1
     invert: 1
     type: 2
-    axis: 2
+    axis: 1
     joyNum: 0
   - serializedVersion: 3
     m_Name: MacOsPs40
@@ -2051,7 +2051,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 3
+    axis: 2
     joyNum: 0
   - serializedVersion: 3
     m_Name: MacOsPs4RVertical
@@ -2067,7 +2067,7 @@ InputManager:
     snap: 0
     invert: 1
     type: 2
-    axis: 6
+    axis: 3
     joyNum: 0
   - serializedVersion: 3
     m_Name: MacOsPs4DPadHorizontal
@@ -2083,7 +2083,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 7
+    axis: 10
     joyNum: 0
   - serializedVersion: 3
     m_Name: MacOsPs4DPadVertical
@@ -2097,9 +2097,9 @@ InputManager:
     dead: 0.19
     sensitivity: 1
     snap: 0
-    invert: 0
+    invert: 1
     type: 2
-    axis: 8
+    axis: 11
     joyNum: 0
   - serializedVersion: 3
     m_Name: MacOsPs4LT
