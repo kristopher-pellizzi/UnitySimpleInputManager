@@ -57,7 +57,7 @@ public class InputManager : MonoBehaviour
         {
             _control = Control.Keyboard;
         }
-        else if (names[0].Equals("Wireless Controller"))
+        else if (!names[0].ToLower().Contains("xbox") && names[0].Contains("Wireless Controller"))
         {
             switch (_os)
             {
