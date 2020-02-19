@@ -9,6 +9,7 @@ public class InputManager : MonoBehaviour
 {
     private static InputManager _manager;
     private static Control _control;
+    private static KeyCode[] _mouseKeyCodes;
 
     private OperatingSystemFamily _os;
     
@@ -20,6 +21,19 @@ public class InputManager : MonoBehaviour
             if (!_manager)
             {
                 print("There must be an active InputManager");
+            }
+            else
+            {
+                _mouseKeyCodes = new KeyCode[7];
+
+                _mouseKeyCodes[0] = KeyCode.Mouse0;
+                _mouseKeyCodes[1] = KeyCode.Mouse1;
+                _mouseKeyCodes[2] = KeyCode.Mouse2;
+                _mouseKeyCodes[3] = KeyCode.Mouse3;
+                _mouseKeyCodes[4] = KeyCode.Mouse4;
+                _mouseKeyCodes[5] = KeyCode.Mouse5;
+                _mouseKeyCodes[6] = KeyCode.Mouse6;
+
             }
         }
         else
@@ -57,7 +71,7 @@ public class InputManager : MonoBehaviour
         {
             _control = Control.Keyboard;
         }
-        else if (!names[0].ToLower().Contains("xbox") && !names[0].toLower().Contains("x360") && names[0].Contains("Wireless Controller"))
+        else if (!names[0].ToLower().Contains("xbox") && !names[0].ToLower().Contains("x360") && names[0].Contains("Wireless Controller"))
         {
             switch (_os)
             {
@@ -117,5 +131,21 @@ public class InputManager : MonoBehaviour
     public static bool GetButton(String name)
     {
         return _control.GetButton(name);
+    }
+    
+    public static bool AnyKeyDown(bool excludeMouse)
+    {
+        if (excludeMouse)
+        {
+            foreach (KeyCode key in _mouseKeyCodes)
+            {
+                if (Input.GetKeyDown(key))
+                {
+                    return false;
+                }
+            }
+        }
+
+        return Input.anyKeyDown;
     }
 }
